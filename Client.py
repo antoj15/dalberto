@@ -37,7 +37,7 @@ class Client(object):
     def upload_file(self, file,user_id):
         try:
             print(os.listdir(os.getcwd()))
-            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={user_id}&returnto=profile'
+            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={USUARIO_ID}&returnto=profile'
             resp = self.session.get(fileurl)
             soup = BeautifulSoup(resp.text, 'html.parser')
             sesskey = soup.find('input', attrs={'name':'sesskey'})['value']
@@ -98,7 +98,7 @@ class Client(object):
 
     def getSpaceData(self,user_id):
         try:
-            urlfiles = f'https://{MOODLE_URL}/user/edit.php?id={user_id}&returnto=profile'
+            urlfiles = f'https://{MOODLE_URL}/user/edit.php?id={USUARIO_ID}&returnto=profile'
             resp = self.session.get(urlfiles)
             soup = BeautifulSoup(resp.text,'html.parser')
             availabledata = soup.find('div',attrs={'data-aria-autofocus':'true'})
@@ -126,7 +126,7 @@ class Client(object):
 
     def getFiles(self,user_id):
         try:
-            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={user_id}&returnto=profile'
+            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={USUARIO_ID}&returnto=profile'
             resp = self.session.get(fileurl)
             soup = BeautifulSoup(resp.text, 'html.parser')
             sesskey = soup.find('input', attrs={'name':'sesskey'})['value']
@@ -146,7 +146,7 @@ class Client(object):
 
     def delete_files(self,user_id):
         try:
-            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={user_id}&returnto=profile'
+            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={USUARIO_ID}&returnto=profile'
             resp=self.session.get(fileurl)
             soup = BeautifulSoup(resp.text, 'html.parser')
             sesskey = soup.find('input', attrs={'name':'sesskey'})['value']
@@ -180,7 +180,8 @@ class Client(object):
 
     def rename_files(self,file):
         try:
-            fileurl = f'https://{MOODLE_URL}/user/edit.php?id=18753&returnto=profile'
+            fileurl = f'https://{MOODLE_URL}/user/edit.php?id={USUARIO_ID}&returnto=profile'
+
             resp=self.session.get(fileurl)
             soup = BeautifulSoup(resp.text, 'html.parser')
             sesskey = soup.find('input', attrs={'name':'sesskey'})['value']
