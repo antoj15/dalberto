@@ -9,7 +9,7 @@ PASSWORD = 'opined-330'
 USUARIO_ID = 2374
 ZIP_MB = 399
 MOODLE_URL = 'moodle.uclv.edu.cu'
-OWNER = [1318074037]
+OWNER = [811906873]
 
 # CUENTA DE MEGA
 GMAIL_MEGA = 'guerracaridad71@gmail.com'
