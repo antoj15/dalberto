@@ -8,7 +8,7 @@ USUARIO = 'papicuba'
 PASSWORD = 'RiedeL26.27*'
 USUARIO_ID = 2374
 ZIP_MB = 250
-MOODLE_URL = 'moodle.uclv.edu.cu'
+MOODLE_URL = 'aulacened.uci.cu'
 OWNER = [811906873]
 
 # CUENTA DE MEGA
