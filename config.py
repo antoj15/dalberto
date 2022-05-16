@@ -4,10 +4,10 @@ API_HASH = '8fb748726926b6e928686675e954a5e1'
 
 
 # DATOS DEL MOODLE
-USUARIO = 'dalberto'
-PASSWORD = 'opined-330'
+USUARIO = 'papicuba'
+PASSWORD = 'RiedeL26.27*'
 USUARIO_ID = 2374
-ZIP_MB = 399
+ZIP_MB = 250
 MOODLE_URL = 'moodle.uclv.edu.cu'
 OWNER = [811906873]
 
